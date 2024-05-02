@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="cardio-equipment.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="cardio-equipment">
+      <div class="title">Cardio</div>
+
+      <div class="tabs">
+        <button class="tab" id="allTab">All</button>
+        <button class="tab active">Cardio</button>
+        <button class="tab" id="strengthTab">Strength</button>
+      </div>
+
+      <div class="cards">
+        <div class="card" id="threadmillCard">
+          <img src="/src/assets/pictures/threadmill.png" alt="Threadmill">
+          <div class="card-info">
+            <h3>Threadmill</h3>
+            <span>$5000</span>
+          </div>
+        </div>
+        <div class="card" id="crosstrainerCard">
+          <img src="/src/assets/pictures/crosstrainer.png" alt="Crosstrainer">
+          <div class="card-info">
+            <h3>Crosstrainer</h3>
+            <span>$7500</span>
+          </div>
+        </div>
+        <div class="card" id="rowMachineCard">
+          <img src="/src/assets/pictures/row machine.png" alt="Row Machine">
+          <div class="card-info">
+            <h3>Row Machine</h3>
+            <span>$3500</span>
+          </div>
+        </div>
+      </div>
+
+   
+      <nav class="navbar">
+        <a id="homeIcon"><i class="fas fa-home"></i></a> <!-- Home icon -->
+        <a href="#"><i class="fas fa-camera"></i></a> <!-- Camera icon -->
+        <a href="#"><i class="fas fa-shopping-cart"></i></a> <!-- Shopping cart icon -->
+        <a href="#"><img src="/src/assets/pictures/sarah.jpg.png" alt="Profile" class="profile-icon"></a> <!-- Profile icon -->
+      </nav>
+    </div>
+    </div>
+    <script>
+      // JavaScript to redirect to cardio-equipment page
+      document.getElementById('allTab').addEventListener('click', function() {
+        window.location.href = 'equipment-page.html';
+      });
+
+      // JavaScript to redirect to strength-equipment page
+      document.getElementById('strengthTab').addEventListener('click', function() {
+        window.location.href = 'strength-equipment.html';
+      });
+
+       // Redirect to equipment-page when clicking Home icon
+       document.getElementById('homeIcon').addEventListener('click', function() {
+        window.location.href = 'equipment-page.html';
+      });
+       // JavaScript to redirect to Olympic Bench detail page
+      document.getElementById('rowMachineCard').addEventListener('click', function() {
+        window.location.href = '/src/app/objects/rowMachine.html';
+       });
+      document.getElementById('crosstrainerCard').addEventListener('click', function() {
+        window.location.href = '/src/app/objects/crosstrainer.html';
+       });
+      document.getElementById('threadmillCard').addEventListener('click', function() {
+        window.location.href = '/src/app/objects/threadmill.html';
+       });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.equipment-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    background-color: #1c1c1e; /* Darker background */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text */
+    padding: 20px; /* Padding around the content */
+    margin: 20px; /* Adds space around the entire container */
+}
+
+.image-section {
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.equipment-image {
+    width: 80%;
+    border-radius: 15px; /* Rounded corners for image */
+    display: block;
+}
+
+.equipment-info {
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: left;
+    background-color: #1c1c1e; /* Darker background for info section */
+}
+
+.equipment-info h2 {
+    margin: 0;
+    font-size: 24px;
+    padding-left:10px;
+    color: #fff; /* White text for header */
+}
+
+.subheading {
+    margin: 0;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #6c757d;
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #d0fd3e;
+}
+
+.dimensions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2c2c2e; /* Dunkler Hintergrund */
+    border-radius: 20px; /* Abgerundete Ecken */
+    padding: 10px 20px; /* Innenabstand */
+    gap: 10px;
+}
+
+.dimension-item {
+    text-align: center; /* Zentriert den Text */
+    color: #fff; /* Weiße Schriftfarbe */
+}
+
+.dimension-item p {
+    margin: 0; /* Entfernt den Außenabstand */
+    font-size: 18px; /* Größe für die Werte */
+    font-weight: bold; /* Fettschrift für die Werte */
+}
+
+.dimension-item span {
+    display: block; /* Umbruch in die nächste Zeile */
+    font-size: 14px; /* Kleinere Schriftgröße */
+    color: #aaa; /* Leicht graue Schriftfarbe */
+}
+
+.separator {
+    width: 1px; /* Dünne Linie */
+    height: 50%; /* Halbe Höhe des Containers */
+    background-color: #666; /* Graue Farbe für die Linie */
+}
+
+.description-box {
+    background-color: #2c2c2e; /* Dunkler Hintergrund */
+    border-radius: 15px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+    margin-top: 20px; /* Außenabstand zum oberen Element */
+    color: #fff; /* Weiße Schriftfarbe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für Tiefe */
+}
+
+.description-box h3 {
+    margin: 0; /* Entfernt den Außenabstand */
+    margin-bottom: 10px; /* Abstand zum Absatz */
+    font-size: 18px; /* Schriftgröße */
+    color: #ffffff; /* Grüner Farbton */
+}
+
+.description-box p {
+    margin: 0; /* Entfernt den Außenabstand */
+    font-size: 14px; /* Schriftgröße */
+    line-height: 1.5; /* Zeilenabstand */
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px calc(50% - 40%);
+    padding: 10px;
+}
+
+.visualize {
+    background-color: #d0fd3e;
+    color: #000;
+}
+
+.add-to-cart {
+    background-color: #d0fd3e;
+    color: #000;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+}

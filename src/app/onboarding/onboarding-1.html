@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./onboarding-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+    />
+  </head>
+  <body>
+    <div class="onboarding-1">
+      <div class="background1">
+        <img class="background-icon1" alt="Background" src="/src/assets/pictures/homegym.jpg" />
+        <div class="choose-your-equipment">CHOOSE YOUR EQUIPMENT</div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-child"></div>
+        <div class="indicator-item"></div>
+        <div class="indicator-inner"></div>
+      </div>
+    </div>
+    <script>
+      // Add JavaScript code here
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("click", function (event) {
+          // Get the width of the window
+          var windowWidth = window.innerWidth;
+
+          // Get the X coordinate of the click event
+          var clickX = event.clientX;
+
+          // Check if the click occurred on the right half of the screen
+          if (clickX > windowWidth / 2) {
+            // Redirect to onboarding-2
+            window.location.href = "onboarding-2.html";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

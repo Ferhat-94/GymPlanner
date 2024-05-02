@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .viewer-link {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .viewer-link:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>AR Visualization</h1>
+
+    <!-- Android Scene Viewer -->
+    <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://example.com/path/to/3dmodel.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;" class="viewer-link">
+        View in AR (Android)
+    </a>
+
+    <!-- iOS AR Quick Look -->
+    <a href="https://example.com/path/to/3dmodel.usdz" class="viewer-link" rel="ar">
+        View in AR (iOS)
+    </a>
+</body>
+</html>
