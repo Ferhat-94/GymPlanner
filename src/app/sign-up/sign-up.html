@@ -44,7 +44,7 @@
             <span class="slider"></span>
           </label>
         </div>
-        <button class="sign-up-btn">Sign up</button> 
+        <button id="signUpButton" class="sign-up-btn">Sign up</button>  
         <div class="social-login">
           <button class="social-btn apple"><i class="icon-apple"></i> Apple</button>
           <button class="social-btn google"><i class="icon-google"></i> Google</button>
@@ -52,10 +52,10 @@
       </div>
     </div>
     <script>
-      var smallButtonContainer = document.getElementById("smallButtonContainer");
+      var smallButtonContainer = document.getElementById("signUpButton");
       if (smallButtonContainer) {
         smallButtonContainer.addEventListener("click", function (e) {
-          window.location.href = "../app/onboarding/sign-up.html";
+          window.location.href = "/src/app/onboarding/onboarding-1.html";
         });
       }
       </script>
