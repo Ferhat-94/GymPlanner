@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./olympicBench.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="equipment-detail">
+    <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+    <div class="image-section">
+        <img class="equipment-image" src="/src/assets/pictures/hantelstange.png" alt="Hantelstange">
+    </div>
+    <div class="equipment-info">
+        <h2>Power Bar</h2>
+        <p class="subheading">Strength</p>
+        <p class="price">$300</p>
+        <div class="dimensions">
+            <div class="dimension-item">
+                <p>1645mm</p>
+                <span>Length</span>
+            </div>
+            <div class="separator"></div>
+            <div class="dimension-item">
+                <p>1800mm</p>
+                <span>Width</span>
+            </div>
+            <div class="separator"></div>
+            <div class="dimension-item">
+                <p>50mm</p>
+                <span>Height</span>
+            </div>
+        </div>
+        <div class="description-box">
+            <h3>Description</h3>
+            <p>The new Performance Bar from Technogym sets a new benchmark in weightlifting. Designed for intensive use with heavy weights, it is characterised by top quality steel and exclusive knurling for an ultra-solid grip. Both needle and ball bearings guarantee optimum rotation of the sleeves.</p>
+        </div>
+        <button class="btn visualize">Visualize in your space</button>
+        <button class="btn add-to-cart">Add to Cart</button>
+    </div>
+</div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
