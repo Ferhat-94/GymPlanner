@@ -81,3 +81,8 @@
   color: var(--color-yellowgreen);
   font-family: var(--font-montserrat);
 }
+
+.get-started img {
+  width: 20px;
+  height: 20px;
+}
