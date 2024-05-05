@@ -46,6 +46,13 @@
             <span>$8000</span>
           </div>
         </div>
+        <div class="card" id="dumbbellBarCard">
+          <img src="/src/assets/pictures/hantelstange.png" alt="dumbbellBarCard">
+          <div class="card-info">
+            <h3>Power Bar</h3>
+            <span>$300</span>
+          </div>
+        </div>
         <div class="card" id="smithMachineCard">
           <img src="/src/assets/pictures/squat rack.png" alt="Smith Machine">
           <div class="card-info">
@@ -92,6 +99,9 @@
 
         document.getElementById('legPressCard').addEventListener('click', function() {
             window.location.href = '/src/app/objects/legPress.html';
+        });
+        document.getElementById('dumbbellBarCard').addEventListener('click', function() {
+            window.location.href = '/src/app/objects/dumbbellBar.html';
         });
         document.getElementById('smithMachineCard').addEventListener('click', function() {
             window.location.href = '/src/app/objects/smithMachine.html';
