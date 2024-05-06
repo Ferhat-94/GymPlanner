@@ -40,13 +40,26 @@
             <h3>Description</h3>
             <p>The new Performance Bar from Technogym sets a new benchmark in weightlifting. Designed for intensive use with heavy weights, it is characterised by top quality steel and exclusive knurling for an ultra-solid grip. Both needle and ball bearings guarantee optimum rotation of the sleeves.</p>
         </div>
-        <button class="btn visualize">Visualize in your space</button>
+        <button class="btn visualize" onclick="visualizeInAR()">Visualize in your space</button>
         <button class="btn add-to-cart">Add to Cart</button>
     </div>
 </div>
 <script>
     function goBack() {
         window.history.back();
+    }
+    function visualizeInAR() {
+        // Detect device and launch appropriate AR viewer
+        if (/Android/i.test(navigator.userAgent)) {
+            // Launch Scene Viewer on Android
+            window.location.href = 'intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/ferhat-94/GymPlnner/main/hantelstange.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;';
+        } else if (/iPhone|iPad/i.test(navigator.userAgent)) {
+            // Launch AR Quick Look on iOS
+            window.location.href = '/src/assets/3DObjects/strwngth/hantelstange.usdz';
+        } else {
+            // Provide fallback for unsupported devices
+            alert('AR viewing is not supported on this device.');
+        }
     }
 </script>
 </body>
