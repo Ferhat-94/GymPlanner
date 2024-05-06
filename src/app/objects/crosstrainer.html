@@ -40,7 +40,7 @@
             <h3>Description</h3>
             <p>A statement in design. A display of exercise technology. A call for immersive total-body workouts that keep you feeling always at your finest.</p>
         </div>
-        <button class="btn visualize">Visualize in your space</button>
+        <button class="btn visualize" onclick="visualizeInAR()">Visualize in your space</button>
         <button class="btn add-to-cart">Add to Cart</button>
     </div>
 </div>
@@ -52,10 +52,10 @@
         // Detect device and launch appropriate AR viewer
         if (/Android/i.test(navigator.userAgent)) {
             // Launch Scene Viewer on Android
-            window.location.href = 'intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/ferhat-94/GymPlanner//blob/main/cross.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;';
+            window.location.href = 'intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/ferhat-94/GymPlanner/src/assets/3DObjects/cardio/cross.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;';
         } else if (/iPhone|iPad/i.test(navigator.userAgent)) {
             // Launch AR Quick Look on iOS
-            window.location.href = '/blob/main/cross.usdz';
+            window.location.href = '/GymPlanner/src/assets/3DObjects/cardio/cross.usdz';
         } else {
             // Provide fallback for unsupported devices
             alert('AR viewing is not supported on this device.');

@@ -52,7 +52,7 @@
         // Detect device and launch appropriate AR viewer
         if (/Android/i.test(navigator.userAgent)) {
             // Launch Scene Viewer on Android
-            window.location.href = 'intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/ferhat-94/GymPlanner/blob/main/hantelstange.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;';
+            window.location.href = 'intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/ferhat-94/GymPlanner/src/assets/3DObjects/strength/hantelstange.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;';
         } else if (/iPhone|iPad/i.test(navigator.userAgent)) {
             // Launch AR Quick Look on iOS
             window.location.href = '/GymPlanner/src/assets/3DObjects/strength/hantelstange.usdz';
